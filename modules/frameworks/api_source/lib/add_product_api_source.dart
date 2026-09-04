@@ -17,8 +17,7 @@ class AddProductApiSourceAdapter implements AddProductApiSource {
     return _apiSource.postApi(
       ApiPaths.addProducts,
       (response) => Product.fromJson(response),
-      // Only send the fields the user actually filled in.
-      data: request.toJson()..removeWhere((_, value) => value == null),
+      data: request.toJson(),
       options: Options(headers: ApiPaths.headers),
     );
   }

@@ -1,17 +1,27 @@
-# sample_app
 
-A new Flutter project.
 
-## Getting Started
+## DEBUG
 
-This project is a starting point for a Flutter application.
+Para ejecutar el menú de scripts, puedes ejecutar el comando en la terminal bash desde el proyecto raíz: scripts/menu.sh.
 
-A few resources to get you started if this is your first Flutter project:
+- Ejecuta la opción 1: limpiar proyecto.
+- Ejecuta la opción 2: obtener paquete.
+- Ejecuta la opción 6: Dart build runner/all.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Script Utils
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Menu
+
+Hay scripts que nos ayudan en el desarrollo.
+
+1. Limpiar proyecto (limpiar todos los módulos del proyecto)
+1. Obtener paquete (resolver las dependencias de todos los módulos del proyecto)
+1. Flujo de negocio (crear flujo de negocio: caso de uso, repositorio, fuente API)
+
+## Arquitectura del Proyecto
+
+Este proyecto está basado en el modelo de Arquitectura Limpia (Clean Architecture), el cual organiza el código en módulos independientes con el objetivo de lograr una alta escalabilidad, mantenibilidad y testabilidad.
+
+Se implementa una arquitectura modular, donde cada paquete cumple una única responsabilidad y si en algun momento se quisiera separar el projecto por repositorios , cada capa esta lista para ser migrada a un repositorio propio.
+
+Esto permite que cada módulo gestione sus propias dependencias y evolucione sin afectar al resto del sistema, fomentando la reutilización de código y una mayor estabilidad del proyecto.

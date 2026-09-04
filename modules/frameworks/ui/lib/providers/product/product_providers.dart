@@ -7,14 +7,6 @@ final getProductsUseCaseProvider = Provider<GetProductsUseCase>(
   (ref) => GetIt.instance<GetProductsUseCase>(),
 );
 
-
-class ProductSearchNotifier extends Notifier<String> {
-  @override
-  String build() => '';
-
-  void update(String value) => state = value;
-}
-
 class ProductListNotifier extends AsyncNotifier<List<Product>> {
   @override
   Future<List<Product>> build() => _fetch();
