@@ -1,0 +1,1 @@
+class SampleException implements Exception {}

@@ -1,0 +1,29 @@
+name: models
+description: "A new Flutter package project."
+version: 0.0.1
+homepage:
+publish_to: none
+
+environment:
+  sdk: ^3.12.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  libs:
+    path: ../libs
+  freezed_annotation:
+  json_annotation:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints:
+  build_runner:
+  json_serializable:
+  freezed:
+  
+flutter:
+  uses-material-design: true
+  

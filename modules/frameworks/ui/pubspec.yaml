@@ -1,0 +1,48 @@
+name: ui
+description: "A new Flutter package project."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ^3.12.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  libs:
+    path: ../../libs
+  models:
+    path: ../../models
+  domain:
+    path: ../../domain
+  api_source:
+    path: ../api_source
+  # Direct dependencies used by UI imports; versions managed in libs
+  flutter_riverpod:
+  riverpod:
+  riverpod_annotation:
+  hooks_riverpod:
+  flutter_hooks:
+  get_it:
+  injectable: ^2.7.1+4
+  go_router:
+  dio:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints:
+  injectable_generator: ^2.9.1
+  build_runner:
+  freezed:
+  riverpod_generator:
+  riverpod_lint:
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+  generate: true
